@@ -1,0 +1,77 @@
+/* Thumbnail Effects Style */
+.tj_container{
+	width:800px;
+	height:400px;
+	position:relative;
+	margin:30px auto;
+}
+.tj_nav{
+	position:absolute;
+	right:-80px;
+	top:50%;
+	margin-top:-35px;
+	height:70px;
+	width:39px;
+}
+.tj_nav span{
+	width:39px;
+	height:25px;
+	background:transparent url(../images/prev.png) no-repeat top left;
+	position:absolute;
+	top:0px;
+	left:0px;
+	text-indent:-9000px;
+	opacity:0.7;
+	cursor:pointer;
+	/*-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-transition: all 0.2s ease-in-out;
+	*/
+}
+.tj_nav span.tj_next{
+	background-image:url(../images/next.png);
+	top:auto;
+	bottom:0px;
+	left:0px;
+}
+.tj_nav span:hover{
+	opacity:1.0;
+}
+.tj_wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+	margin:0px auto;
+}
+.tj_wrapper ul li{
+	float:left;
+}
+.tj_wrapper ul li a{
+	outline:none;
+	display:block;
+	margin:5px;
+	background:transparent url(../images/bg_thumb.jpg) no-repeat center center;
+}
+.tj_wrapper ul li a img{
+	display:block;
+	border:none;
+	opacity:0.7;
+	-moz-box-shadow:2px 2px 4px #8e8e8e;
+	-webkit-box-shadow:2px 2px 4px #8e8e8e;
+	box-shadow:2px 2px 4px #8e8e8e;
+	/*
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-transition: all 0.2s ease-in-out;
+	*/
+}
+.tj_wrapper ul li a img:hover{
+	opacity:1.0;
+}
+
+/* Specific style for the examples */
+.example10 .tj_container{
+	height:600px;
+}
